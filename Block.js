@@ -20,6 +20,7 @@ class Block{
        var pos= this.body.position;
           rectMode(CENTER);
           rect(pos.x,pos.y,this.width, this.height);
+      } else{
         World.remove(world,this.body);
         push();
         this.visibility = this.visibility-5;
